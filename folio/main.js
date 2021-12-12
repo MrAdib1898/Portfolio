@@ -29,7 +29,7 @@ function init(){
         const nextText = nextPage.querySelector(".details");
         const folio = document.querySelector(".folio");
         const tl = new TimelineMax();
-        tl.fromTo(currentLeft,0.2, {y: "20%"}, {y:"-500%"}, "-=0.2")
+        tl.fromTo(currentLeft,0.3, {y: "20%"}, {y:"-500%"}, "-=0.2")
         .to(folio, 0.3,{backgroundImage:backgrounds[pageNumber]})
         .fromTo(
             currentPage,

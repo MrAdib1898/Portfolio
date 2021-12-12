@@ -38,7 +38,7 @@ nav img{
     position: relative;
     
     grid-template-columns: 1fr 1fr 10%;
-    margin-left: 15%;
+    margin-left: 7%;
 
 }
 .hero{
@@ -86,7 +86,7 @@ nav img{
     grid-column: 1/2;
     position: relative;
     top: 30%;
-    right: -12%;
+    right: -7%;
 }
 .details h1{
     font-size: 64px;
@@ -254,8 +254,39 @@ nav img{
 .work-gallery img{
     width: 100%;
 }
+@media(max-width:1300px){
+    .page{
+        grid-template-columns: 1fr 1fr;
+        margin-left: -20px;
+    }
+    .details{
+        max-width: 450px;
+        top:10%;
+        
+    }
+    /* .page .hero img{
+        width: 30%;
+    } */
+}
+@media(max-height:700px){
+    .page{
+        margin-bottom: auto;
+     }
+     .page .hero img{
+         width: 80%;
+         margin-left: 10%;
+         
+     }
+     .slider-control{
+         top: 0;
+         opacity: 0.7;
+     
+     }
+    
 
-@media (max-width:1024px){
+}
+
+/* @media (max-width:1024px){
     .page{
         grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-rows: 1fr 1fr;
@@ -300,7 +331,8 @@ nav img{
         padding-top: 30px;
         text-align: center;
     }
-}
+} */
+
 .about-me{
     color: white;
     background: radial-gradient(#cc2b5e,#753a98);
@@ -315,10 +347,6 @@ nav img{
     pointer-events: none;
     overflow: hidden;
 }
-
-
-
-
 
 .nav-open{
     position: absolute;
